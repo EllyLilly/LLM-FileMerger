@@ -71,16 +71,27 @@ This is a known limitation. For such files, uncheck the option before merging.
   Microsoft .NET / WPF librariess
 
 ## Project Structure
-FileMerger/
-├── Models/
-│ └── FileItem.cs # Data model for a single file
-├── Services/
-│ └── FileMergeService.cs # File reading, validation, merging logic
-├── ViewModels/
-│ └── MainViewModel.cs # UI logic, commands, text processing
-├── MainWindow.xaml # UI layout
-├── MainWindow.xaml.cs # Code-behind (drag & drop handlers)
-└── App.xaml # Application entry point
+
+```
+LLM-FileMerger/
+├── .gitignore
+├── LLM-FileMerger.sln
+├── README.md
+├── docs/
+│   └── screenshot.png
+└── FileMerger/
+    ├── FileMerger.csproj
+    ├── App.xaml
+    ├── App.xaml.cs
+    ├── MainWindow.xaml
+    ├── MainWindow.xaml.cs
+    ├── Models/
+    │   └── FileItem.cs
+    ├── Services/
+    │   └── FileMergeService.cs
+    └── ViewModels/
+        └── MainViewModel.cs
+```
 
 
 ## Build
